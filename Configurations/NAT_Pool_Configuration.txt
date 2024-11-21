@@ -1,1 +1,9 @@
+# NAT Pool Configuration Commands
+ip nat pool NAT_POOL 129.137.18.2 129.137.18.12 netmask 255.255.255.0
+access-list 1 permit 192.168.20.0 0.0.0.255
+ip nat inside source list 1 pool NAT_POOL overload
 
+# Verification - Output of 'show ip nat translations'
+Pro Inside global      Inside local       Outside local      Outside global
+--- 129.137.18.3       192.168.20.3       ---                ---
+--- 129.137.18.4       192.168.20.4       ---                ---
