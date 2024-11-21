@@ -3,6 +3,8 @@
 ## Overview
 This project demonstrates the configuration of Network Address Translation (NAT) using Cisco Packet Tracer. It includes static NAT, dynamic NAT with overload, Port Address Translation (PAT), and port forwarding. The lab highlights foundational networking skills that are crucial for managing secure and efficient networks.
 
+Through this lab, I gained hands-on experience with routing protocols, NAT techniques, and secure service exposure, which are critical for managing real-world network infrastructure.
+
 ## Objectives
 - Configure **Static NAT** to map public IP addresses to internal servers (e.g., Honey Pot).
 - Implement **Dynamic NAT** with a defined address pool and overload for efficient IP allocation.
@@ -42,6 +44,8 @@ This lab aligns with basic cybersecurity principles:
 - **Controlled Access**: Port forwarding demonstrates how to securely expose necessary services while minimizing the attack surface.
 - **Honey Pot Integration**: Setting up a honey pot showcases a fundamental cybersecurity technique for monitoring and analyzing malicious activity.
 
+These configurations demonstrate practical skills used in enterprise networks to protect internal systems, optimize resource allocation, and manage secure remote access.
+
 ## Skills Demonstrated
 - Network design and IP address allocation using CIDR.
 - Configuration of NAT, PAT, and port forwarding.
@@ -73,6 +77,8 @@ This lab aligns with basic cybersecurity principles:
   - Port Forwarding Rules
 
 ## Future Enhancements
-- Add firewall rules and Access Control Lists (ACLs) to restrict traffic further.
-- Simulate a real-world attack on the honey pot and analyze logs.
-- Integrate an intrusion detection system (IDS) to monitor traffic.
+- Add specific firewall rules to restrict unauthorized traffic.
+- Simulate a real-world attack on the honey pot and analyze logs using intrusion detection tools (e.g., Snort).
+- Integrate monitoring and alerting tools to track network activity.
+
+Feel free to explore the configurations and Packet Tracer file included in this repository, and reach out if you have any questions or feedback!
