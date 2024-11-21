@@ -1,1 +1,10 @@
+# Port Forwarding Configuration Commands
+ip nat inside source static tcp 172.16.53.254 80 129.137.18.14 80
+
+# Verification - Testing Port Forwarding
+Tested by accessing http://129.137.18.14 on a remote browser. The web page was displayed successfully.
+
+# Verification - Output of 'show ip nat translations'
+Pro Inside global      Inside local       Outside local      Outside global
+tcp 129.137.18.14:80   172.16.53.254:80  ---                ---
 
