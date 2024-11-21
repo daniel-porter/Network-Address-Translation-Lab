@@ -1,1 +1,19 @@
+# EIGRP Configuration Commands
+router eigrp 100
+ network 192.168.1.0
+ network 192.168.2.0
+ network 192.168.4.0
+ network 192.168.6.0
+ network 192.168.7.0
+ no auto-summary
+
+# Verification - Output of 'show ip route'
+Gateway of last resort is not set
+
+      129.137.0.0/24 is subnetted, 1 subnets
+D       129.137.18.0 [90/2170112] via 192.168.0.1, 00:00:10, Serial0/0/0
+C       192.168.1.0 is directly connected, GigabitEthernet0/1
+C       192.168.2.0 is directly connected, GigabitEthernet0/2
+C       192.168.4.0 is directly connected, GigabitEthernet0/3
+C       192.168.6.0 is directly connected, GigabitEthernet0/4
 
